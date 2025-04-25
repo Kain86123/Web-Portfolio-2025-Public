@@ -5689,27 +5689,73 @@ if (reversed == null) { reversed = false; }
 		this.stop();
 		
 		
-		this.Clbtn2.addEventListener("click", closebtn19.bind(this));
 		
-		function closebtn19()
+		/* Click to Go to Frame and Stop
+		Clicking on the specified symbol instance moves the playhead to the specified frame in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		
+		Instructions:
+		1. Replace the number 5 in the code below with the frame number you would like the playhead to move to when the symbol instance is clicked.
+		2.Frame numbers in EaselJS start at 0 instead of 1
+		*/
+		
+		
+		this.Clbtn2.addEventListener("click", fl_ClickToGoToAndStopAtFrame_6.bind(this));
+		
+		function fl_ClickToGoToAndStopAtFrame_6()
 		{
 			this.gotoAndStop(19);
 		}
 	}
 	this.frame_21 = function() {
 		this.stop();
+		
+		this.Clbtn3.addEventListener("click", fl_ClickToGoToAndStopAtFrame_6.bind(this));
+		
+		function fl_ClickToGoToAndStopAtFrame_6()
+		{
+			this.gotoAndStop(19);
+		}
 	}
 	this.frame_22 = function() {
 		this.stop();
+		
+		this.Clbtn4.addEventListener("click", fl_ClickToGoToAndStopAtFrame_6.bind(this));
+		
+		function fl_ClickToGoToAndStopAtFrame_6()
+		{
+			this.gotoAndStop(19);
+		}
 	}
 	this.frame_23 = function() {
 		this.stop();
+		
+		this.Clbtn5.addEventListener("click", fl_ClickToGoToAndStopAtFrame_6.bind(this));
+		
+		function fl_ClickToGoToAndStopAtFrame_6()
+		{
+			this.gotoAndStop(19);
+		}
 	}
 	this.frame_24 = function() {
 		this.stop();
+		
+		this.Clbtn6.addEventListener("click", fl_ClickToGoToAndStopAtFrame_6.bind(this));
+		
+		function fl_ClickToGoToAndStopAtFrame_6()
+		{
+			this.gotoAndStop(19);
+		}
 	}
 	this.frame_25 = function() {
 		this.stop();
+		
+		this.Clbtn7.addEventListener("click", fl_ClickToGoToAndStopAtFrame_6.bind(this));
+		
+		function fl_ClickToGoToAndStopAtFrame_6()
+		{
+			this.gotoAndStop(19);
+		}
 	}
 	this.frame_29 = function() {
 		this.stop();
@@ -5837,22 +5883,47 @@ if (reversed == null) { reversed = false; }
 	this.instance_14 = new lib.shape137("synched",0);
 	this.instance_14.setTransform(619.3,31.4);
 
+	this.Clbtn3 = new lib.CloseBtn1();
+	this.Clbtn3.name = "Clbtn3";
+	this.Clbtn3.setTransform(1297.35,79.45,1,1,0,0,0,11.5,11.5);
+	new cjs.ButtonHelper(this.Clbtn3, 0, 1, 1);
+
 	this.instance_15 = new lib.shape139("synched",0);
 	this.instance_15.setTransform(443.5,78.05);
+
+	this.Clbtn4 = new lib.CloseBtn1();
+	this.Clbtn4.name = "Clbtn4";
+	this.Clbtn4.setTransform(1115.8,31.4,1,1,0,0,0,11.5,11.5);
+	new cjs.ButtonHelper(this.Clbtn4, 0, 1, 1);
 
 	this.instance_16 = new lib.shape141("synched",0);
 	this.instance_16.setTransform(612.9,31.4);
 
+	this.Clbtn5 = new lib.CloseBtn1();
+	this.Clbtn5.name = "Clbtn5";
+	this.Clbtn5.setTransform(1128.6,31.4,1,1,0,0,0,11.5,11.5);
+	new cjs.ButtonHelper(this.Clbtn5, 0, 1, 1);
+
 	this.instance_17 = new lib.shape143("synched",0);
 	this.instance_17.setTransform(625.7,31.4);
+
+	this.Clbtn6 = new lib.CloseBtn1();
+	this.Clbtn6.name = "Clbtn6";
+	this.Clbtn6.setTransform(1122.2,23.65,1,1,0,0,0,11.5,11.5);
+	new cjs.ButtonHelper(this.Clbtn6, 0, 1, 1);
 
 	this.instance_18 = new lib.shape145("synched",0);
 	this.instance_18.setTransform(619.3,25);
 
+	this.Clbtn7 = new lib.CloseBtn1();
+	this.Clbtn7.name = "Clbtn7";
+	this.Clbtn7.setTransform(1128.6,23.65,1,1,0,0,0,11.5,11.5);
+	new cjs.ButtonHelper(this.Clbtn7, 0, 1, 1);
+
 	this.instance_19 = new lib.shape147("synched",0);
 	this.instance_19.setTransform(625.7,25);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_12}]}).to({state:[]},1).to({state:[{t:this.thumbnail4}]},8).to({state:[{t:this.instance_13}]},1).to({state:[]},6).to({state:[{t:this.instance_14},{t:this.Clbtn2,p:{x:1122.2,y:31.4}}]},4).to({state:[{t:this.instance_15},{t:this.Clbtn2,p:{x:1297.35,y:79.45}}]},1).to({state:[{t:this.instance_16},{t:this.Clbtn2,p:{x:1115.8,y:31.4}}]},1).to({state:[{t:this.instance_17},{t:this.Clbtn2,p:{x:1128.6,y:31.4}}]},1).to({state:[{t:this.instance_18},{t:this.Clbtn2,p:{x:1122.2,y:23.65}}]},1).to({state:[{t:this.instance_19},{t:this.Clbtn2,p:{x:1128.6,y:23.65}}]},1).to({state:[]},1).wait(4));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_12}]}).to({state:[]},1).to({state:[{t:this.thumbnail4}]},8).to({state:[{t:this.instance_13}]},1).to({state:[]},6).to({state:[{t:this.instance_14},{t:this.Clbtn2}]},4).to({state:[{t:this.instance_15},{t:this.Clbtn3}]},1).to({state:[{t:this.instance_16},{t:this.Clbtn4}]},1).to({state:[{t:this.instance_17},{t:this.Clbtn5}]},1).to({state:[{t:this.instance_18},{t:this.Clbtn6}]},1).to({state:[{t:this.instance_19},{t:this.Clbtn7}]},1).to({state:[]},1).wait(4));
 
 	// Layer_17
 	this.instance_20 = new lib.shape101Up("synched",0);
